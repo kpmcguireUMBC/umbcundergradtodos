@@ -1,0 +1,14 @@
+{
+	"name": "umbcundergrad/todos",
+	"title": "UMBC Undergraduate Admissions Todos",
+	"category": "widgets",
+	"icon": "yes-alt",
+	"description": "todos for undergraduate students",
+	"textdomain": "umbcundergradtodos",
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/style-index.css",
+	"style": "file:./build/style-index.css"
+}

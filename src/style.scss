@@ -1,0 +1,129 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.category-dropdown,
+.todo-label.category-label {
+	display: none;
+}
+
+.is-selected {
+	.category-preview {
+		display: none;
+	}
+	.category-dropdown,
+	.todo-label.category-label {
+		display: block;
+	}
+}
+
+.todo-wrapper {
+	opacity: 0.25;
+	margin: 1rem;
+}
+
+.todo-enabled {
+	opacity: 1;
+}
+
+.wp-block {
+	max-width: none;
+}
+
+.top-section-wrapper {
+	display: flex;
+	align-items: center;
+
+	.checkbox-wrapper {
+		padding: 0.5rem;
+
+		input,
+		input::before {
+			width: 3rem;
+			height: 3rem;
+		}
+	}
+
+	.todo-title {
+		margin: 0;
+	}
+
+	.title-wrapper {
+		flex: 1;
+	}
+
+	.todo-controls-wrapper {
+		display: flex;
+	}
+
+	.todo-control {
+		flex: 1;
+	}
+
+	.todo-expand {
+		width: 2rem;
+		height: 2rem;
+		background-color: silver;
+		cursor: pointer;
+		padding: 0;
+	}
+}
+
+.editor-styles-wrapper .category-preview {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+
+	.category-preview-item {
+		background: teal;
+		border-radius: 1rem;
+		padding: 0.25rem 0.5rem;
+		line-height: 1;
+		color: white;
+		font-size: 0.75rem;
+
+		margin: 0.25rem;
+
+		&:first-child {
+			margin-left: -0.25rem;
+		}
+	}
+}
+
+.todo-label {
+	display: block;
+}
+
+.todos-page-wrapper {
+	.content-wrapper {
+		display: none;
+
+		* {
+			display: none;
+		}
+	}
+	.visible {
+		display: block;
+
+		* {
+			display: block;
+		}
+	}
+}
+
+.content-wrapper {
+	padding: 1rem;
+	border: 1px solid #666;
+	border-radius: 0.5rem;
+	transition: all 0.4s;
+}
+
+.icon-chevron {
+	pointer-events: none;
+	width: 2rem;
+	height: 2rem;
+}
